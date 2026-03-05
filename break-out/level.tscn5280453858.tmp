@@ -3,7 +3,6 @@
 [ext_resource type="Script" uid="uid://vwi7l2egfvdd" path="res://Scripts/level.gd" id="1_oi3di"]
 [ext_resource type="PackedScene" uid="uid://bma182bddnms4" path="res://paddle.tscn" id="1_vonw3"]
 [ext_resource type="PackedScene" uid="uid://cm4t636biuj3i" path="res://ball.tscn" id="2_oi3di"]
-[ext_resource type="Texture2D" uid="uid://bejk6kved71lg" path="res://assets/0f0f0378-e0cc-4f27-aa82-be980337a7e4.png" id="4_0b4ue"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_0b4ue"]
 size = Vector2(16, 669)
@@ -46,11 +45,5 @@ shape = SubResource("RectangleShape2D_1ainy")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="DeathZone" unique_id=200080355]
 position = Vector2(573, 696.5)
 shape = SubResource("RectangleShape2D_oi3di")
-
-[node name="Background" type="Sprite2D" parent="." unique_id=1162098327]
-modulate = Color(1, 1, 1, 0.39215687)
-z_index = -2
-position = Vector2(582, 346)
-texture = ExtResource("4_0b4ue")
 
 [connection signal="body_entered" from="DeathZone" to="." method="_on_death_zone_body_entered"]

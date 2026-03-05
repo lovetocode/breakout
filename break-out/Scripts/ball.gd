@@ -24,3 +24,7 @@ func _physics_process(delta: float) -> void:
 		
 		if velocity.x == 0:
 			velocity.x == -200
+			
+		
+			
+	
